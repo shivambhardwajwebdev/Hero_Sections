@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
-    overflow:hidden;
 }
 .header{
     width: 100vw;
@@ -101,3 +100,4 @@ ul{
     max-width: 400px;
 
 }
+
