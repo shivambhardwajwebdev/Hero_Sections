@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Agbalumo", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            
+            gap: 20px;
+            background: linear-gradient(to right,#0b0f14,#3df2e0);
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+        }
+        .left{
+            flex-basis: 30%;
+            
+            
+        }
+        .left h1{
+            display: block;
+            font-size: 80px;
+            justify-self: center;
+            background-image: url("https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg");
+            filter: drop-shadow(20px 7px 5px turquoise);
+            background-clip: text;
+            color:greenyellow;
+            margin-bottom: 4%;
+        }
+        .left p{
+            font-family: "Poppins", sans-serif;
+            color: #fcfcf7 ;
+            text-align: justify;
+        }
+        .right{
+            flex-basis: 50%;
+            display: grid;
+            height: 70vh;
+            grid-template-columns: repeat(3,1fr);      
+        }
+        .child-img{    
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;          
+    color: white;
+    background-color: rgb(73, 65, 55);
+    background-blend-mode:hard-light;
+    
+
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    font-size: 18px;
+}
+#special{
+    border-top-left-radius: 25px;
+}
+.child-img:hover{
+    background-color: rgb(149, 161, 172);
+    transition: all 1s ease-in-out;
+    background-position: center;
+    
+
+}   
+.row-2{
+    grid-row: span 2;
+} 
+.col-2{
+    grid-column: span 2;
+}   
+@media (max-width:760px) {
+    .container{
+        flex-direction: column;
+    }
+    .left h1{
+        font-size: 50px;
+    }
+    .left p{
+        padding: 30px;
+        text-align: center;
+    }
+}
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cinzel:wght@400..900&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="left">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, at nihil. Deserunt architecto voluptatibus ea eligendi placeat aspernatur est quis corrupti in similique et error dolores eius consequatur, suscipit aliquid eveniet facilis, perspiciatis necessitatibus. Accusantium fuga voluptatum, similique officia fugiat quisquam animi corrupti necessitatibus. Laborum reprehenderit atque id? Iure, alias!</p>
+    </div>
+    <div class="right">
+        <div class="child-img row-2" id="special"  style="background-image: url(https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww);">tree</div>
+        <div class="child-img col-2" style="background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  ">Nature</div>
+        
+        <div class="child-img " style="background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww);">Scene</div>
+        <div class="child-img row-2" style="background-image: url(https://images.unsplash.com/photo-1472396961693-142e6e269027?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fHww);">Wild</div>
+        <div class="child-img col-2 " style="background-image: url(https://plus.unsplash.com/premium_photo-1669750817438-3f7f3112de8d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2h8ZW58MHx8MHx8fDA%3D);">Beach</div>
+        <div class="child-img" style="background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">Memory</div>
+        <div class="child-img col-2" style="background-image: url(https://images.unsplash.com/photo-1533481405265-e9ce0c044abb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsbHxlbnwwfHwwfHx8MA%3D%3D);">Mall</div>
+    </div>
+    </div>
+</body>
+</html>
