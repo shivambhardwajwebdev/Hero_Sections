@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
+    overflow:hidden;
 }
 .header{
     width: 100vw;
@@ -98,4 +99,5 @@ ul{
 .home_img{
     object-fit: contain;
     max-width: 400px;
+
 }
