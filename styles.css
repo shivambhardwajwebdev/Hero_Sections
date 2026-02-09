@@ -47,7 +47,8 @@ ul{
 }
 .left{
     flex-basis: 50%;
-    height: 100vh;
+    min-height: 80vh;
+    height:auto;
     display: flex;
     padding: 50px;
     margin-left: 50px;
@@ -100,4 +101,5 @@ ul{
     max-width: 400px;
 
 }
+
 
