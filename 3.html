@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desgin-2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        body{
+            display: flex;
+            background-image: url(back.png);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .header{
+            display: flex;
+            justify-content: end;
+            align-items: center;background: transparent;
+            width: 100vw;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 60px;
+        }
+        img{
+            margin: 10px 60px;
+            background:transparent;
+            border: 1px solid black;
+            border-radius: 50%;
+            
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 100vw;
+            gap:50px;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 80px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-basis: 30%;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+
+
+        }
+        .buttons{
+            display: flex;
+            gap: 30px;
+        }
+        .hello1,.hello2{
+            width: 150px;
+            height: 50px;
+            border-radius: 20px;
+           border: none;
+            font-size: 17px;
+
+        }
+        .hello1{
+            background: linear-gradient( 135deg,rgb(38, 47, 140),rgb(189, 119, 197));
+        }
+        .hello2{
+             border: 2px solid white;
+             background:transparent;
+        }
+        li {
+    position: relative;
+    cursor: pointer;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient( 135deg,rgb(38, 47, 140),rgb(189, 119, 197));
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+li:hover::after {
+    width: 100%;
+}
+.active {
+    text-decoration: underline;
+   
+    text-decoration-thickness: 2px;
+     text-underline-offset: 6px;  
+    
+}
+@media (max-width:640px){
+    ul{
+        gap: 15px;
+    }
+    img{
+        margin:10px 15px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li class="active" >Home</li>
+                    <li>Features</li>
+                    <li>Community</li>
+                    <li>Pricing</li>
+                </ul>
+            </nav>
+            <img src="user.png" alt="user_icon" width="50px">
+        </div>
+        <div class="main">
+            <div class="content">
+            <h1>
+                Unlock Your Creative Flow
+
+            </h1>
+            <p>Discover tools & inspiration for your next project</p>
+            </div>
+            <div class="buttons">
+                <button class="hello1">Explore Now</button>
+                <button class="hello2">Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
